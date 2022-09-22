@@ -1,8 +1,8 @@
 pipeline {
     agent any
     tools {
-        terraform 'terraform-1.1.2'
-    }
+  terraform 'Deploy-Iac'
+}
     stages {
          stage("Checkout stage") {
       steps {
