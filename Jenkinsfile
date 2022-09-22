@@ -8,17 +8,17 @@ pipeline {
     }
     stage ("terraform init") {
             steps {
-                sh ("terraform init")
+                bat 'terraform init'
             }
         }
         stage ("terraform plan") {
             steps {
-                sh ("terraform plan")
+                bat 'terraform plan'
             }
         }
         stage ("terraform apply") {
             steps {
-                sh ("terraform apply --auto-approve")
+                bat 'terraform apply --auto-approve'
             }
         }
         }}
