@@ -3,22 +3,22 @@ pipeline {
     stages {
          stage('Checkout stage') {
       steps {
-        git 'https://github.com/sanjaypjana/terraform-pipelines'
+        git "https://github.com/sanjaypjana/terraform-pipelines"
       }
     }
-    stage ("terraform init") {
+    stage ('terraform init') {
             steps {
-                sh ('terraform init')
+                sh ("terraform init")
             }
         }
-        stage ("terraform plan") {
+        stage ('terraform plan') {
             steps {
-                sh ('terraform plan')
+                sh ("terraform plan")
             }
         }
-        stage ("terraform apply") {
+        stage ('terraform apply') {
             steps {
-                sh ('terraform apply --auto-approve')
+                sh ("terraform apply --auto-approve")
             }
         }
         }}
