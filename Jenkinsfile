@@ -3,7 +3,7 @@ pipeline {
     stages {
          stage('Checkout stage') {
       steps {
-        git 'https://github.com/sanjaypjana/cloud-customers-docker'
+        git 'https://github.com/sanjaypjana/terraform-pipelines'
       }
     }
     stage ("terraform init") {
