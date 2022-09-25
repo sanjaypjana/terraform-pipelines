@@ -12,7 +12,7 @@ pipeline {
         
         stage('Handshake') {
       steps {
-        withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'AWS Account', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {
+        withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'AWS_cred', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {
         }
       }
         }
