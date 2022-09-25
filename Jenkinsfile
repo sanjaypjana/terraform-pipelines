@@ -9,6 +9,7 @@ pipeline {
         withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'AKIAX6213AGRU2WUURCR', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {
         }
       }
+        }
          stage("Checkout stage") {
       steps {
         git 'https://github.com/sanjaypjana/terraform-pipelines'
